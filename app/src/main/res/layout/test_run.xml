@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:layout_editor_absoluteY="81dp">
+
+    <RadioGroup
+        android:id="@+id/aRG"
+        android:layout_width="353dp"
+        android:layout_height="320dp"
+        app:layout_constraintBottom_toTopOf="@+id/selectBTN"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/questionTV">
+
+        <RadioButton
+            android:id="@+id/aoneRBTN"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:checked="true"
+            android:text="Answer1" />
+
+        <RadioButton
+            android:id="@+id/atwoRBTN"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="Answer2" />
+
+        <RadioButton
+            android:id="@+id/athreeRBTN"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="Answer3" />
+
+        <RadioButton
+            android:id="@+id/afourRBTN"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="Answer4" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/selectBTN"
+        android:layout_width="292dp"
+        android:layout_height="68dp"
+        android:text="Select"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aRG" />
+
+    <TextView
+        android:id="@+id/questionTV"
+        android:layout_width="348dp"
+        android:layout_height="78dp"
+        android:text="Question"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/aRG"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

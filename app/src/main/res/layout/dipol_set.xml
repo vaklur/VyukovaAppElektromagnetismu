@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="81dp">
+
+    <Button
+        android:id="@+id/setDipolBTN"
+        android:layout_width="300dp"
+        android:layout_height="46dp"
+        android:text="Nastavit parametry"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/setDipolNoteTV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.38"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/setDipolHET" />
+
+    <TextView
+        android:id="@+id/setDipolTV2"
+        android:layout_width="241dp"
+        android:layout_height="24dp"
+        android:text="Délka ramen dipólu l [m]"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/setDipolLET"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.223"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/setDipolIV" />
+
+    <TextView
+        android:id="@+id/setDipolTV3"
+        android:layout_width="237dp"
+        android:layout_height="31dp"
+        android:text="Frekvence vlny f [MHz]"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/setDipolFreqET"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.217"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/setDipolLET" />
+
+    <EditText
+        android:id="@+id/setDipolLET"
+        android:layout_width="246dp"
+        android:layout_height="44dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="0"
+        app:layout_constraintBottom_toTopOf="@+id/setDipolTV3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.231"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/setDipolTV2" />
+
+    <EditText
+        android:id="@+id/setDipolFreqET"
+        android:layout_width="243dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="0"
+        app:layout_constraintBottom_toTopOf="@+id/setDipolReflectorCHB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.226"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/setDipolTV3" />
+
+    <TextView
+        android:id="@+id/setDipolNoteTV"
+        android:layout_width="341dp"
+        android:layout_height="44dp"
+        android:text="Poznámka : Výsledné vyzařovací charakteristiky platí pro jednoduchý dipól."
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/setDipolBTN" />
+
+    <CheckBox
+        android:id="@+id/setDipolReflectorCHB"
+        android:layout_width="273dp"
+        android:layout_height="34dp"
+        android:text="Použít reflektor"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/setDipolTV4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.288"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/setDipolFreqET" />
+
+    <TextView
+        android:id="@+id/setDipolTV4"
+        android:layout_width="290dp"
+        android:layout_height="41dp"
+        android:text="Vzdálenost dipólu od reflektoru [m]"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/setDipolHET"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.301"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/setDipolReflectorCHB" />
+
+    <EditText
+        android:id="@+id/setDipolHET"
+        android:layout_width="93dp"
+        android:layout_height="47dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="0"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/setDipolBTN"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.109"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/setDipolTV4" />
+
+    <ImageView
+        android:id="@+id/setDipolIV"
+        android:layout_width="321dp"
+        android:layout_height="107dp"
+        app:layout_constraintBottom_toTopOf="@+id/setDipolTV2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/dipol" />
+</android.support.constraint.ConstraintLayout>

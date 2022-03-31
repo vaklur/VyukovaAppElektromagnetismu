@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/wxSetTV"
+        android:layout_width="339dp"
+        android:layout_height="45dp"
+        android:text="Nastavení parametrů vlnovodu"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/wxSetIV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/wxSetIV"
+        android:layout_width="354dp"
+        android:layout_height="179dp"
+        app:layout_constraintBottom_toTopOf="@+id/wxSetTV2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wxSetTV"
+        app:srcCompat="@drawable/coaxwg" />
+
+    <TextView
+        android:id="@+id/wxSetTV2"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:text="Poloměr vnitřní r0 [mm]"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/wxSetTV3"
+        app:layout_constraintEnd_toStartOf="@+id/wxSetr0ET"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wxSetIV" />
+
+    <TextView
+        android:id="@+id/wxSetTV3"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:text="Poloměr vnější R0 [mm]"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/wxSetTV4"
+        app:layout_constraintEnd_toStartOf="@+id/wxSetR0ET"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wxSetTV2" />
+
+    <TextView
+        android:id="@+id/wxSetTV4"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:text="Permitivita dielektrika"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/wxSetTV5"
+        app:layout_constraintEnd_toStartOf="@+id/wxSetEpsrET"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wxSetTV3" />
+
+    <TextView
+        android:id="@+id/wxSetTV5"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:text="Permeabilita dielektrika"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/wxSetTV6"
+        app:layout_constraintEnd_toStartOf="@+id/wxSetMiET"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wxSetTV4" />
+
+    <TextView
+        android:id="@+id/wxSetTV6"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:text="Frekvence vlny f [GHz]"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/wxSimBTN"
+        app:layout_constraintEnd_toStartOf="@+id/wxSetFreqET"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wxSetTV5" />
+
+    <EditText
+        android:id="@+id/wxSetr0ET"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="0"
+        app:layout_constraintBottom_toTopOf="@+id/wxSetR0ET"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/wxSetTV2"
+        app:layout_constraintTop_toBottomOf="@+id/wxSetIV" />
+
+    <EditText
+        android:id="@+id/wxSetR0ET"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="0"
+        app:layout_constraintBottom_toTopOf="@+id/wxSetEpsrET"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/wxSetTV3"
+        app:layout_constraintTop_toBottomOf="@+id/wxSetr0ET" />
+
+    <EditText
+        android:id="@+id/wxSetEpsrET"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="0"
+        app:layout_constraintBottom_toTopOf="@+id/wxSetMiET"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/wxSetTV4"
+        app:layout_constraintTop_toBottomOf="@+id/wxSetR0ET" />
+
+    <EditText
+        android:id="@+id/wxSetMiET"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="0"
+        app:layout_constraintBottom_toTopOf="@+id/wxSetFreqET"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/wxSetTV5"
+        app:layout_constraintTop_toBottomOf="@+id/wxSetEpsrET" />
+
+    <EditText
+        android:id="@+id/wxSetFreqET"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="0"
+        app:layout_constraintBottom_toTopOf="@+id/wxSimBTN"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/wxSetTV6"
+        app:layout_constraintTop_toBottomOf="@+id/wxSetMiET" />
+
+    <Button
+        android:id="@+id/wxSimBTN"
+        android:layout_width="340dp"
+        android:layout_height="52dp"
+        android:text="Potvdit nastavení"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wxSetTV6" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="81dp">
+
+    <ScrollView
+        android:layout_width="367dp"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="11dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/infoMicrostripTV"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:text="Návrh mikropásku"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="17dp"
+                tools:layout_editor_absoluteY="33dp" />
+
+            <TextView
+                android:id="@+id/infoMikrostripTV2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="16sp"
+                tools:layout_editor_absoluteX="24dp"
+                tools:layout_editor_absoluteY="109dp" />
+
+            <ImageView
+                android:id="@+id/infoMicrostripIV"
+                android:layout_width="match_parent"
+                android:layout_height="172dp"
+                app:srcCompat="@drawable/microstrip"
+                tools:layout_editor_absoluteX="21dp"
+                tools:layout_editor_absoluteY="240dp" />
+
+            <TextView
+                android:id="@+id/infoMicrostripTV3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="\nNá obrázku je nesymetrické mikropáskové vedení.\n"
+                android:textSize="16sp"
+                tools:layout_editor_absoluteX="33dp"
+                tools:layout_editor_absoluteY="419dp" />
+
+            <TextView
+                android:id="@+id/linkMicrostripTV"
+                android:layout_width="match_parent"
+                android:layout_height="59dp"
+                android:text="TextView"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="17dp"
+                tools:layout_editor_absoluteY="445dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

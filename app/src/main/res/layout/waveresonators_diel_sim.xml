@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/wrDielSimTV"
+        android:layout_width="341dp"
+        android:layout_height="77dp"
+        android:text="Dielektrický kvádrový rezonátor"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/wrDielSimTV2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/wrDielWaveguideParamsTV"
+        android:layout_width="340dp"
+        android:layout_height="74dp"
+        android:text=""
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/wrDielSimTV3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wrDielSimTV2" />
+
+    <TextView
+        android:id="@+id/wrDielSimTV2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Parametry našeho rezonátoru"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/wrDielWaveguideParamsTV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wrDielSimTV" />
+
+    <Spinner
+        android:id="@+id/wrDielSimS"
+        android:layout_width="340dp"
+        android:layout_height="39dp"
+        app:layout_constraintBottom_toTopOf="@+id/wrDielSimSV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wrDielSimTV3" />
+
+    <TextView
+        android:id="@+id/wrDielSimTV3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zobrazit:"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/wrDielSimS"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wrDielWaveguideParamsTV" />
+
+    <ScrollView
+        android:id="@+id/wrDielSimSV"
+        android:layout_width="340dp"
+        android:layout_height="197dp"
+        app:layout_constraintBottom_toTopOf="@+id/wrDielSimBTN"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wrDielSimS">
+
+        <TextView
+            android:id="@+id/wrDielWaveguideModesTV"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:textSize="16sp" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/wrDielSimBTN"
+        android:layout_width="292dp"
+        android:layout_height="52dp"
+        android:text="Nastavení parametrů simulace"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wrDielSimSV" />
+
+</android.support.constraint.ConstraintLayout>

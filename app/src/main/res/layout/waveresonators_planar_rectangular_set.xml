@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteY="81dp">
+
+    <Button
+        android:id="@+id/wrPlanarRectSetBTN"
+        android:layout_width="210dp"
+        android:layout_height="50dp"
+        android:text="Potvdit nastavení"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/wrPlanarRectModeBTN"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wrPlanarRectSV" />
+
+    <TextView
+        android:id="@+id/wrPlanarRectSetTV"
+        android:layout_width="360dp"
+        android:layout_height="47dp"
+        android:text="Nastavení parametrů rezonátoru"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/wrPlanarRectSetIV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/wrPlanarRectSetIV"
+        android:layout_width="360dp"
+        android:layout_height="172dp"
+        app:layout_constraintBottom_toTopOf="@+id/wrPlanarRectSV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wrPlanarRectSetTV"
+        app:srcCompat="@drawable/planarrectresonator" />
+
+    <Button
+        android:id="@+id/wrPlanarRectModeBTN"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:text="Vlastní vid"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/wrPlanarRectSetBTN"
+        app:layout_constraintTop_toBottomOf="@+id/wrPlanarRectSV" />
+
+    <ScrollView
+        android:id="@+id/wrPlanarRectSV"
+        android:layout_width="364dp"
+        android:layout_height="210dp"
+        app:layout_constraintBottom_toTopOf="@+id/wrPlanarRectSetBTN"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wrPlanarRectSetIV">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/wrPlanarRectSetTV1"
+                android:layout_width="210dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="Šířka rezonátoru w [mm]"
+                android:textAlignment="viewStart"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/wrPlanarRectSetTV3"
+                app:layout_constraintEnd_toStartOf="@+id/wrPlanarRectSetWET"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/wrPlanarRectSetWET"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:text="0"
+                app:layout_constraintBottom_toTopOf="@+id/wrPlanarRectSetLET"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/wrPlanarRectSetTV1"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/wrPlanarRectSetTV7"
+                android:layout_width="210dp"
+                android:layout_height="40dp"
+                android:text="Měrná vodivost σ [S/m] "
+                android:textAlignment="viewStart"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/wrPlanarRectSetSigmaET"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/wrPlanarRectSetTV6" />
+
+            <TextView
+                android:id="@+id/wrPlanarRectSetTV3"
+                android:layout_width="210dp"
+                android:layout_height="40dp"
+                android:text="Délka rezonátoru l [mm]"
+                android:textAlignment="viewStart"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/wrPlanarRectSetTV4"
+                app:layout_constraintEnd_toStartOf="@+id/wrPlanarRectSetLET"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/wrPlanarRectSetTV1" />
+
+            <TextView
+                android:id="@+id/wrPlanarRectSetTV4"
+                android:layout_width="210dp"
+                android:layout_height="40dp"
+                android:text="Výška substrátu h [mm]"
+                android:textAlignment="viewStart"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/wrPlanarRectSetTV5"
+                app:layout_constraintEnd_toStartOf="@+id/wrPlanarRectSetHET"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/wrPlanarRectSetTV3" />
+
+            <TextView
+                android:id="@+id/wrPlanarRectSetTV5"
+                android:layout_width="210dp"
+                android:layout_height="40dp"
+                android:text="Relativní permitivita εr [-] "
+                android:textAlignment="viewStart"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/wrPlanarRectSetTV6"
+                app:layout_constraintEnd_toStartOf="@+id/wrPlanarRectSetEpsrET"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/wrPlanarRectSetTV4" />
+
+            <TextView
+                android:id="@+id/wrPlanarRectSetTV6"
+                android:layout_width="210dp"
+                android:layout_height="40dp"
+                android:text="Ztrátový činitel tanδ [-]"
+                android:textAlignment="viewStart"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/wrPlanarRectSetTV7"
+                app:layout_constraintEnd_toStartOf="@+id/wrPlanarRectSetTanDeltaET"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/wrPlanarRectSetTV5" />
+
+            <EditText
+                android:id="@+id/wrPlanarRectSetLET"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:text="0"
+                app:layout_constraintBottom_toTopOf="@+id/wrPlanarRectSetHET"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/wrPlanarRectSetTV3"
+                app:layout_constraintTop_toBottomOf="@+id/wrPlanarRectSetWET" />
+
+            <EditText
+                android:id="@+id/wrPlanarRectSetHET"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:text="0"
+                app:layout_constraintBottom_toTopOf="@+id/wrPlanarRectSetEpsrET"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/wrPlanarRectSetTV4"
+                app:layout_constraintTop_toBottomOf="@+id/wrPlanarRectSetLET" />
+
+            <EditText
+                android:id="@+id/wrPlanarRectSetEpsrET"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:text="0"
+                app:layout_constraintBottom_toTopOf="@+id/wrPlanarRectSetTanDeltaET"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/wrPlanarRectSetTV5"
+                app:layout_constraintTop_toBottomOf="@+id/wrPlanarRectSetHET" />
+
+            <EditText
+                android:id="@+id/wrPlanarRectSetSigmaET"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:text="0"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/wrPlanarRectSetTV7"
+                app:layout_constraintTop_toBottomOf="@+id/wrPlanarRectSetTanDeltaET" />
+
+            <EditText
+                android:id="@+id/wrPlanarRectSetTanDeltaET"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:text="0"
+                app:layout_constraintBottom_toTopOf="@+id/wrPlanarRectSetSigmaET"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/wrPlanarRectSetTV6"
+                app:layout_constraintTop_toBottomOf="@+id/wrPlanarRectSetEpsrET" />
+        </android.support.constraint.ConstraintLayout>
+
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

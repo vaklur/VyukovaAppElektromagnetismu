@@ -1,0 +1,120 @@
+<resources>
+    <string name="app_name">Výuková App elektromagnetismu</string>
+    <string name="title_activity_Examples">Příklady z teorie</string>
+    <string name="title_activity_Example1">Vyzařování dipólu</string>
+    <string name="title_activity_Example2">Fresnelův elipsoid</string>
+    <string name="title_activity_Example3">Odrazy na vedení</string>
+    <string name="title_activity_Example4">Rovinná vlna</string>
+    <string name="title_activity_Example5">Mikropásek</string>
+    <string name="title_activity_Waveguide">Vlnovody</string>
+    <string name="title_activity_Test">Test</string>
+    <string name="title_activity_TestRun">Probíhající test</string>
+    <string name="title_activity_TestHistory">Historie testů</string>
+    <string name="DipolEkartez">Směrová charakteristika elementárního dipólu v kartézských souřadnicích v rovině intenzity elektrického pole E.</string>
+    <string name="DipolHkartez">Směrová charakteristika elementárního dipólu v kartézských souřadnicích v rovině intenzity magnetického pole H.</string>
+    <string name="DipolEpolar">Směrová charakteristika elementárního dipólu v polárních souřadnicích v rovině intenzity elektrického pole E.</string>
+    <string name="DipolHpolar">Směrová charakteristika elementárního dipólu v polárních souřadnicích v rovině intenzity magnetického pole H.</string>
+    <string name="MicrostripInfo"><![CDATA[<p>&emsp;&emsp;V aplikaci umožnujeme syntézu a analýzu nesymetrického mikropáskového vedení, které dnes patří mezi jedno z nejpoužívanějších mikropáskových vedení, které se používají až do kmitočtu cca 26 GHz, příp. i výše. Pro tyto vedení nám vyvstává několik problémů, protože se vedením šíří vlna HEM.<br>
+    &emsp;Přibližné (avšak dostatečně přesné řešení) na relativně nízkých kmitočtech představuje šíření vlny kvazi-TEM, místo vlny HEM. Pomocí metody konformního zobrazení dostaneme přesné vztahy, které jsou pro technickou praxi nevhodné. Jejich aproximací dostaneme vztahy pro výpočet parametrů nesymetrického mikropáskové vedení, které určil Wheeler a s kterými v aplikaci počítáme.<br>
+    &emsp;Uvedené vztahy jsou platné cca do 6 -8 GHz. Na vyšších kmitočtech se začíná uplatňovat disperze základní elektromagnetické vlny v nesymetrickém mikropáskovém vedení, tj. délka vlny, konstanta šíření, charakteristická impedance vedení a další parametry začínají záviset na kmitočtu.<br>
+    &emsp;Pro respektování disperze vlny HEM na vyšších kmitočtech se zavádějí tzv. disperzní modely, jako kmitočtové korekce aproximace kvazi-TEM. Díky těmto aproximacím, kterými se nebudeme dále zabývat, se můžeme dostat až na přesné určení parametru v oblasti kmitočtu 18 až 20 GHz.
+    <p>]]></string>
+    <string name="AppInfo">Aplikace byla vytvořena v rámci bakalářské práce na téma - Výuková aplikace Elektromagnetismu.\n
+        Aplikaci navrhl a naprogramoval Jakub Michálek, UREL, FEKT, VUT v Brně.\n\n
+        Dejte mi prosím vědět, pokud máte nějaké návrhy nebo dotazy na:</string>
+    <string name="FresnelTheory"><![CDATA[<p>&emsp;Mezi dvěma anténami se energie nešíří jen po přímce, ale i v okolí spojnice mezi nimi. Z toho plyne, že přímá viditelnost nám nezaručuje maximální přenos energie. Roli hrají překážky, které se mohou nacházet v daném prostoru a výsledná vlna, která dorazí na náš přijímač je součtem přímé vlny a vln odražených v tomto prostoru.<br>
+        &emsp;Při dané vzdálenosti <b><i>d</i></b> mezi anténami, lze pro každý kmitočet definovat rozhraní, ve kterém je odražená vlna fázově posunuta o jednu nebo více půlvln. Takovéto rozhraní, které můžeme definovat jako geometrické místo, ve kterém je součet vzdáleností jednoho bodu od obou antén konstantní, je elipsa, v jejichž ohniscích jsou obě antény.<br>
+        &emsp;Pokud je odražená vlna zpožděna právě o jednu půlvlnu, pak tento elipsoid nazýváme první Fresnelovou zónou (či první Fresnelův rotační elipsoid). Tento elipsoid nám ohraničuje zónu, ve které by se neměly mezi anténami nacházet žádné objekty. Potom tuto zónu můžeme nazvat „čistou“.<br><br>
+        &emsp;V Aplikaci zobrazujeme pouze první Fresnelovu zónu, která je v praxi nejpoužívanější.<p>]]>
+    </string>
+    <string name="FresnelTheory1"> <![CDATA[<p>&emsp;Na obrázku je geometrie Fresnelovy zóny v rovině kolmé k zemskému povrchu, kde <b><i>A1</i></b> a <b><i>A2</i></b> jsou jednotlivé antény, <b><i>d</i></b> je vzdálenost mezi anténami a <b><i>r</i></b> je poloměr Fresnelovy zóny. <p>]]></string>
+    <string name="ReflectionTheory"><![CDATA[<p>&emsp;Pro základní popis vedení vycházíme z klasické teorie vedení. Určujeme rozložení napětí a proudu podél vedení a z nich odvozenou velikost činitele odrazu a poměru stojatých vln na vedení.<br>
+    &emsp;Z technického hlediska je vhodnější vyjadřovat napětí a proud na vedení v závislosti na vzdálenosti od konce vedení, protože napěťové a proudové poměry jsou značně ovlivňovány zakončovací impedancí <i><b>Zk</i></b>.<p>]]> </string>
+    <string name="ReflectionTheory1"><![CDATA[<p>&emsp;Pro přenos maximálního výkonu ze zdroje <b><i>Ug</i></b> do zátěže <b><i>Zk</i></b>  prostřednictvím vedení o impednaci <b><i>Z0</i></b> musí být splněna podmínka vzájemného přizpůsobení impedancí <b><i>Zk = Z0</i></b>.<br>
+    &emsp;Při nepřizpůsobení impedancí na začátku vedení nedojde k maximálnímu přenosu výkonu ze zdroje do vedení a dochází k odrazu původní vlny od zátěže zpátky ke zdroji.<br>
+    &emsp;Poměr odražené a původní vlny závisí na míře nepřizpůsobení, která se udává jako tzv. činitel odrazu <b><i>ρ</b></i>. Činitel odrazu je obecně komplexní číslo, protože zatěžovací impedance <b><i>Zk</i></b>  nemusí být pouze odporová, ale mívá i jalovou složku. Absolutní hodnota činitele odrazu se pohybuje mezi <i><b>  ρ = 0</i></b>   (dokonalé přizpůsobení zátěže) a <i><b>  ρ = 1</i></b>   (totální odraz na zkratovaném nebo otevřeném konci vedení).<br>
+    &emsp;Z činitele odrazu poté můžeme určit tzv. poměr stojatých vln, který nám udává poměr napěťového (proudového) maxima a minima stojaté vlny na vedení. Pro přizpůsobené vedení je <i><b> PSV = 1</i></b>   a pro totálně nepřizpůsobené vedení se <i><b>PSV</i></b>   blíží k nekonečnu. <br>
+    &emsp;Vedení je charakterizováno několika parametry. Nejdůležitějšími parametry jsou impedance vedení <i><b>  Z0</i></b>  , délka vedení <i><b>  l</i></b>  , měrný útlum vedení <i><b>  β</i></b>   a činitel zkrácení na vedení <i><b>  ξ</i></b>  , který nám říká o kolik je délka vlny na vedení kratší než délka vlny ve vakuu.
+<p>]]></string>
+    <string name="DipolTheory"><![CDATA[<p>&emsp;Dipól patří mezi elementární antény, které převádí elektromagnetickou vlnu, šířící se podél vedení, na vlnu šířící se volným prostorem.<br>
+    &emsp;Vycházíme z dvouvodičového vedení, jehož konce otočíme o 90º, tak vytvoříme z otevřeného vedení symetricky napájený dipól o délce ramen <i><b>l</i></b> viz obrázek.
+<p>]]></string>
+    <string name="DipolTheory1"><![CDATA[<p>&emsp;V aplikaci zobrazujeme směrové charakteristiky antény pomocí funkce záření.<br>
+    &emsp;Funkce záření <i><b>F</i></b> popisuje směrové vlastnosti antény. V určitém směru tato funkce záření může dosahovat maxima <i><b>Fmax</i></b>. Ve směru osy dipólu (tedy osy ramen) je vyzařování vždy nulové. Poměr velikosti funkce záření v daném směru ku <i><b>Fmax</i></b>., pak nazýváme normovanou funkcí záření. <br>
+    &emsp;Grafickým znázorněním absolutní hodnoty této poměrné funkce záření je směrová charakteristika antény, kterou vynášíme v polárních nebo kartézských souřadnicích. Polární souřadnice nám poskytují názornější zobrazení, ale v kartézské soustavě se lépe odečítají hodnoty potřebné pro další výpočty.
+<p>]]></string>
+    <string name="PlaneWaveTheory"><![CDATA[<p>&emsp;Rovinná vlna je pouhou idealizací vlny kulové, nebo válcové, protože pokud tyto vlny budeme pozorovat z místa téměř nekonečně vzdáleného od zdroje, bude zakřivení vlnoploch tak malé, že je můžeme považovat za vlnoplochy rovinné.<br>
+&emsp;Rovinná vlna má planární vlnoplochu, která je kolmá k šíření vlny. Rovinná vlna mění ve směru šíření pouze svou fázi, amplituda se nemění, pokud se vlna šíří v bezeztrátovém prostředí.
+<p>]]></string>
+    <string name="PlaneWaveTheory1"><![CDATA[<p>&emsp;Rovinnou vlnu v kartézských souřadnicích a to, jak se šíří, máme zobrazeno na obrázku a také si ji můžeme zobrazit pomocí simulace v aplikaci. Je zřejmé, že vlnová délka vlny roste se vzrůstem úhlu mezi směrem šíření a směrem, v němž počítáme vlnovou délku. Pokud vzroste vlnová délka, musí vzrůst i fázová rychlost vlny, protože vlna musí během jedné periody urazit větší vzdálenost.<p>]]></string>
+    <string-array name="spinnerreflect">
+            <item>Up [V]</item>
+            <item>Ip [A]</item>
+            <item>Uk [V]</item>
+            <item>Ik [A]</item>
+    </string-array>
+    <string name="WaveguideTheory1"><![CDATA[<p>&emsp;Vlnovod je přenosové zařízení, které má příčné rozměry srovnatelné s délkou vlny signálu. Může mít libovolný tvar průřezu, ale nejčastěji je v praxi využíván průřez obdélníkový a kruhový. Charakteristickým znakem vlnovodu je to, že se v něm může šířit vlna jen o kmitočtu vyšším než určitý, tzv. mezní kmitočet fm. Rozložení elektromagnetického pole ve vlnovodu má vlnový charakter v podélném i příčném směru.<br>
+    &emsp;Elektromagnetické pole může být při vyšších frekvencích uspořádáno ve vlnovodu mnoha způsoby. Tyto způsoby nazýváme módy nebo vidy. V praxi se snažíme existenci více vidů vyhnout, protože různé vidy se mohou šířit různými rychlostmi a tím degradovat tvar signálu, který se vlnovodem šíří. Proto nejčastěji využíváme vlnovod v tzv. pásmu jednovidovosti, kde se v něm vybudí pouze dominantní vid tj. vid s nejnižší mezní frekvencí. <br>
+    &emsp;Podle rozložení elektromagnetického pole ve vlnovodu dělíme vidy na transverzálně elektrické (TE) tj. takové, které mají složky elektrického pole pouze ve směru průřezu vedení, ale nikoli ve směru šíření vlny, a vlny transverzálně magnetické (TM), u kterých jsou příčné naopak složky magnetického pole. Každý vid se šíří vlnovodem až od určité frekvence.<br>
+    &emsp;Vlivem různých mezních kmitočtů mají jednotlivé vidy TEmn a TMmn různou fázovou rychlost, skupinovou rychlost, délku vlny ve vlnovodu, charakteristickou impedanci, přenášejí různě velký výkon a jsou tlumeny s různou hodnotou měrného útlumu.<br><br>
+    <b>Kovový vlnovod obdélníkového průřezu</b><br>
+    &emsp;Vlnovod obdélníkového průřezu je vyplněný dielektrikem a ohraničen kovovým pláštěm. Dominantním videm obdélníkového vlnovodu je vid TE10 s mezní vlnovou délkou. Všechny vidy s nižší vlnovou délkou než mezní nazýváme vyšší vidy. <br>
+    &emsp;Tento vlnovod může pracovat ve dvou režimech. První z nich je impulzní, kde je maximální přenášený výkon dán průraznou pevností dielektrika vyplňující vlnovod. V takovém případě může vlnovod přenášet stovky kW až jednotky MW. Druhý je režim kontinuální, kde je maximální výkon omezený oteplením stěn vlnovodu. <br>
+    &emsp;Ztráty obdélníkového vlnovodu vznikají vlivem ztrát v dielektriku, v pásmu nepropustnosti nebo vlivem ztrát v nedokonale vodivých stěnách.
+
+    <p>]]></string>
+    <string name="WaveguideTheory2"><![CDATA[<p>&emsp;Obrázek kovového vlnovodu obdélníkového průřezu<br><br>
+    <b>Kovový vlnovod kruhového průřezu</b><br>
+    &emsp;Vlnovod kruhového průřezu je vyplněn dielektrikem a ohraničen kovovým pláštěm. Dominantním videm kruhového vlnovodu je vid TE11. Příčiny ztrát a pracovní režimy v kruhovém vlnovodu jsou stejné jako u obdélníkového vlnovodu. <br>
+    &emsp;Ve vlnovodu kruhového průřezu se používají kromě dominantního vidu také tzv. rotačně symetrické vidy TE. Jsou to vidy, které mají první vidové číslo m = 0. Vysokofrekvenční vodivé proudy takovýchto vidů mají na plášti jen příční směr, takže stěnami vlnovodu netečou žádné podélné proudy a měrný útlum vlnovodu klesá s rostoucím kmitočtem. <br>
+    &emsp;Také můžeme využívat takzvané nadrozměrné vlnovody, které využívají rotačně symetrický vid TE01,	ale jejich poloměr je mnohokrát větší než hodnota poloměru nutná pro šíření tohoto vidu. V tomto vlnovodu se tedy šíří veliké množství vidů, jejichž útlum by znehodnotil velice malý útlum dominantního vidu. K odstranění nežádoucích vidů využíváme vinutý vlnovod, který je tvořen měděným vodičem navinutým na válcové jádro. Válcový vlnovod slouží tedy jako vidový filtr. Nadrozměrné vlnovody se využívají pro velmi vysoké kmitočty. Jejich velkou nevýhodou je vysoká cena.
+<p>]]></string>
+    <string name="WaveguideTheory3"><![CDATA[<p>&emsp;Obrázek kovového vlnovodu kruhového průřezu<br><br>
+    <b>Koaxiální vlnovod</b><br>
+    &emsp;Koaxiální vedení můžeme považovat za speciální případ dutého kovového vlnovodu, který je složen ze dvou vzájemně izolovaných vodičů. Dominantním videm je zde vlna TEM, jejíž siločáry elektrického a magnetického pole leží v příčné rovině vedení. Koaxiálním vedením se může šířit i stejnosměrný signál, proto má vid TEM nulový mezní kmitočet . <br>
+    &emsp;Kromě vlny TEM se mohou v koaxiálním vedení vybudit také vlnovodové vidy, tzn. vidy TE a TM, pak můžeme mluvit o koaxiálním vlnovodu. U koaxiálního vedení používáme vlnovodové vidy zcela výjimečně. Z toho plyne, že je nutné pracovat pouze v pásmu jednovidovosti. <br>
+    &emsp;Hlavním vlnovým videm je vid TE11, který má ze všech vlnovodových vidů největší vlnovou délku. <br><br>
+    &emsp;Obrázek koaxiálního vlnovodu
+
+    <p>]]></string>
+
+    <string name="WaveResTheory1"><![CDATA[<p>&emsp;Nejčastěji využívanými rezonátory jsou kvádrové a válcové dutinové rezonátory, koaxiální rezonátory, obdélníkový a kruhový deskový rezonátor a dielektrický kvádrový rezonátor. Základními parametry rezonátorů jsou rezonanční kmitočet a činitel jakosti. <br><br>
+<b>Kvádrové a válcové dutinové rezonátory</b><br>
+&emsp;Dutinové rezonátory jsou nejčastěji používanými mikrovlnnými rezonátory v pásmech mm a cm vln. Jejich nejvýznamnější vlastností je velmi vysoký vlastní činitel jakosti Q0, který se pohybuje řádově mezi tisíci a stovkami tisíců. Dutinový rezonátor je část prostoru vyplněná dielektrikem a uzavřená kovovým pláštěm. Tím vzniká dutina o určitém objemu V.
+&emsp;Vlnovodové dutinové rezonátory rezonují na nekonečně mnoha diskrétních kmitočtech, z nichž každý přísluší odlišnému uspořádání pole TE nebo TM v dutině. Vidy jsou u rezonátoru charakterizovány třemi vidovými čísly m, n a p. Čísla m a n určují uspořádání pole v příčném řezu rezonátoru a číslo p určuje uspořádání pole v podélném směru. <br><br>
+<b>Kvádrové rezonátory</b><br>
+&emsp;Rezonátory vytvořené z úseku vlnovodu obdélníkového průřezu. 	Kvádrové rezonátory pracují nejčastěji s videm TE101. Tento vid má nejnižší rezonanční kmitočet, který nezávisí na výšce dutiny b. Přelaďování rezonátoru se dělá změnou jeho délky l například realizací jedné čelní strany rezonátoru posuvným pístem.
+
+
+    <p>]]></string>
+
+    <string name="WaveResTheory2"><![CDATA[<p>&emsp;Obrázek kvádrového rezonátoru<br><br>
+<b>Válcové rezonátory</b><br>
+&emsp;Rezonátory vytvořené z úseku vlnovodu kruhového průřezu. Dnes nejpoužívanější a nejrozšířenější vlnovodové rezonátory v mikrovlnné technice<br>
+	&emsp;Válcové rezonátory se nejčastěji využívají s rotačně symetrickými vidy TE0np, nejvíce využíváme vid TE011 kvůli jeho nesporným výhodám. Základny rezonátoru nemusí mít s válcovou stěnou elektricky dokonalý kontakt. Toho se využívá u přeladitelných rezonátorů, kde díky tomu můžeme využít bezkontaktní píst. Nevodivá mezera mezi čelem a pláštěm dutiny působí jako účinný vidový filtr. Rezonátory s rotačně symetrickými vidy dosahují největších hodnot činitele jakosti. S videm TE011  má dutina nejmenší objem, a tedy největší přeladitelnost bez nebezpečí degenerace vidů. <br>
+&emsp;S jinými než rotačně symetrickými vidy se válcové rezonátory používají velmi zřídka.
+
+
+    <p>]]></string>
+
+    <string name="WaveResTheory3"><![CDATA[<p>&emsp;Obrázek válcového rezonátoru<br><br>
+
+<b>Koaxiální rezonátor</b><br>
+&emsp;Koaxiální rezonátor je tvořen koaxiální dutinou, tj. úsekem koaxiálního vedení uzavřených na obou koncích nakrátko. Provozuje se výhradně s videm TEM. <br>
+&emsp;Obvykle používáme dva druhy koaxiální rezonátorů: půlvlnné koaxiální rezonátory a čtvrtvlnné koaxiální rezonátory.
+
+
+    <p>]]></string>
+
+    <string name="WaveResTheory4"><![CDATA[<p>&emsp;Obrázek koaxiálního rezonátoru<br><br>
+
+<b>Planární mikropáskové rezonátory</b><br>
+&emsp;Rezonátory vytvořené z části mikropáskového vedení na dielektrickém substrátu. Nejčastěji se v praxi využívá obdélníkový a kruhový deskový rezonátor. Obdélníkový deskový rezonátor rezonuje s vidy TEm0p a kruhový deskový rezonátor rezonuje s vidy TEmn0. <br><br>
+<b>Dielektrické rezonátory</b><br>
+&emsp;Dielektrické rezonátory jsou tvořeny pouze z vysoce jakostního dielektrika s velmi vysokou relativní permitivitou εr a vysokou teplotní stabilitou permitivity a rozměrů. Obvykle mají tvar kvádru nebo válce.	Největší výhody dielektrických rezonátorů oproti klasickým dutinovým rezonátorům jsou zmenšení rozměrů 10 až 20 krát, vysoký činitel jakosti, nenastávají ztráty ve vodivých stěnách a ztráty vyzařováním jsou velmi malé. Také vysoká teplotní stálost rezonančního kmitočtu. <br><br>
+&emsp;Obrázek dielektrického rezonátoru
+
+
+    <p>]]></string>
+
+</resources>

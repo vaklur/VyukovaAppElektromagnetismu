@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <TextView
+        android:id="@+id/testhistoryTV"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="Historie testů"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"></TextView>
+
+    <Button
+        android:id="@+id/delhistoryBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Vymaž Historii"
+        android:textSize="18sp"
+        android:textStyle="bold"></Button>
+
+    <ListView
+        android:id="@+id/historyLV"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/delhistoryBTN"
+        android:layout_below="@id/testhistoryTV"
+        android:layout_marginBottom="2dip"
+        android:layout_marginTop="2dip"
+        android:drawSelectorOnTop="false"
+        android:visibility="visible" />
+</RelativeLayout>

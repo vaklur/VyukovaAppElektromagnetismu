@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:layout_editor_absoluteY="81dp">
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/voltageswLCH"
+        android:layout_width="326dp"
+        android:layout_height="329dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/voltageswTV2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/voltageswTV1"
+        app:layout_constraintTop_toBottomOf="@+id/modulsvvBTN"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <TextView
+        android:id="@+id/voltageswTV2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vzdálenost od konce vedení [m]"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/voltageswLCH"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1" />
+
+    <Button
+        android:id="@+id/modulsvvBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onButtonClick1"
+        android:text="Modul SV napětí"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/voltageswLCH"
+        app:layout_constraintEnd_toStartOf="@+id/argumentsvvBTN"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <Button
+        android:id="@+id/argumentsvvBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Argument SV napětí"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/voltageswLCH"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/modulsvvBTN"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <com.example.bubuk.semestralniprace.OtherClass.VerticalTV
+        android:id="@+id/voltageswTV1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="bottom|right"
+        android:text="Velikost napětí [V]"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/voltageswLCH"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/modulsvvBTN" />
+
+</android.support.constraint.ConstraintLayout>

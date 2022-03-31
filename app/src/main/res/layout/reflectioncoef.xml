@@ -1,0 +1,84 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/reflectioncoefTV2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vzdálenost od konce vedení [m]"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reflectioncoefLCH"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1" />
+
+    <Button
+        android:id="@+id/modulRcBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Modul Č. ODRAZU"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/reflectioncoefLCH"
+        app:layout_constraintEnd_toStartOf="@+id/argumentRcBTN"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintBaseline_creator="1"
+        tools:layout_constraintLeft_creator="1" />
+
+    <Button
+        android:id="@+id/argumentRcBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Argument Č. ODRAZU"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/reflectioncoefLCH"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/modulRcBTN"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <com.example.bubuk.semestralniprace.OtherClass.VerticalTV
+        android:id="@+id/reflectioncoefTV1"
+        style="@style/verticalTextStyle"
+        android:layout_width="60dp"
+        android:layout_height="219dp"
+        android:gravity="bottom|right"
+        android:text="Velikost činitele odrazu [ ]"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/reflectioncoefLCH"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/modulRcBTN" />
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/reflectioncoefLCH"
+        android:layout_width="302dp"
+        android:layout_height="346dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/reflectioncoefTV2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/reflectioncoefTV1"
+        app:layout_constraintTop_toBottomOf="@+id/modulRcBTN"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+</android.support.constraint.ConstraintLayout>

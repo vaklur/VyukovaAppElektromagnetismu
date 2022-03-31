@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="385dp"
+        android:layout_height="354dp"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:id="@+id/wmrModeOneCB"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:checked="false"
+            android:text="1. VID "
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="2dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/wmrModeOneS"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:visibility="gone"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="130dp" />
+
+            <TextView
+                android:id="@+id/wmrModeOneTV"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="m"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                tools:layout_editor_absoluteX="102dp"
+                tools:layout_editor_absoluteY="130dp" />
+
+            <EditText
+                android:id="@+id/wmrModeOneMET"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="number"
+                android:text="1"
+                android:textAlignment="center"
+                android:visibility="gone"
+                tools:layout_editor_absoluteX="132dp"
+                tools:layout_editor_absoluteY="130dp" />
+
+            <TextView
+                android:id="@+id/wmrModeOneTV1"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="n"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                tools:layout_editor_absoluteX="202dp"
+                tools:layout_editor_absoluteY="130dp" />
+
+            <EditText
+                android:id="@+id/wmrModeOneNET"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="number"
+                android:selectAllOnFocus="false"
+                android:singleLine="false"
+                android:text="1"
+                android:textAlignment="center"
+                android:visibility="gone"
+                tools:layout_editor_absoluteX="232dp"
+                tools:layout_editor_absoluteY="130dp" />
+
+            <TextView
+                android:id="@+id/wmrModeOneTV2"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:visibility="gone"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:text="p" />
+
+            <EditText
+                android:id="@+id/wmrModeOnePET"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:ems="10"
+                android:inputType="number"
+                android:text="1"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/wmrModeTwoCB"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+            android:text="2. VID "
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="86dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/wmrModeTwoS"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:visibility="gone"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="46dp" />
+
+            <TextView
+                android:id="@+id/wmrModeTwoTV"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="m"
+                android:visibility="gone"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="102dp"
+                tools:layout_editor_absoluteY="46dp" />
+
+            <EditText
+                android:id="@+id/wmrModeTwoMET"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:visibility="gone"
+                android:inputType="number"
+                android:text="1"
+                android:textAlignment="center"
+                tools:layout_editor_absoluteX="132dp"
+                tools:layout_editor_absoluteY="46dp" />
+
+            <TextView
+                android:id="@+id/wmrModeTwoTV1"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="n"
+                android:visibility="gone"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="202dp"
+                tools:layout_editor_absoluteY="46dp" />
+
+            <EditText
+                android:id="@+id/wmrModeTwoNET"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:visibility="gone"
+                android:inputType="number"
+                android:selectAllOnFocus="false"
+                android:singleLine="false"
+                android:text="1"
+                android:textAlignment="center"
+                tools:layout_editor_absoluteX="232dp"
+                tools:layout_editor_absoluteY="46dp" />
+            <TextView
+                android:id="@+id/wmrModeTwoTV2"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                android:text="p" />
+
+            <EditText
+                android:id="@+id/wmrModeTwoPET"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="number"
+                android:visibility="gone"
+                android:text="1"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/wmrModeThreeCB"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+            android:text="3. VID "
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="353dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/wmrModeThreeS"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:visibility="gone"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="46dp" />
+
+            <TextView
+                android:id="@+id/wmrModeThreeTV"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="m"
+                android:textAlignment="center"
+                android:visibility="gone"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="102dp"
+                tools:layout_editor_absoluteY="46dp" />
+
+            <EditText
+                android:id="@+id/wmrModeThreeMET"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:ems="10"
+                android:inputType="number"
+                android:text="1"
+                android:textAlignment="center"
+                tools:layout_editor_absoluteX="132dp"
+                tools:layout_editor_absoluteY="46dp" />
+
+            <TextView
+                android:id="@+id/wmrModeThreeTV1"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="n"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                tools:layout_editor_absoluteX="202dp"
+                tools:layout_editor_absoluteY="46dp" />
+
+            <EditText
+                android:id="@+id/wmrModeThreeNET"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:visibility="gone"
+                android:inputType="number"
+                android:selectAllOnFocus="false"
+                android:singleLine="false"
+                android:text="1"
+                android:textAlignment="center"
+                tools:layout_editor_absoluteX="232dp"
+                tools:layout_editor_absoluteY="46dp" />
+
+            <TextView
+                android:id="@+id/wmrModeThreeTV2"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:visibility="gone"
+                android:textStyle="bold"
+                android:text="p" />
+
+            <EditText
+                android:id="@+id/wmrModeThreePET"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:ems="10"
+                android:inputType="number"
+                android:text="1"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/wmrModeFourCB"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+            android:text="4. VID "
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="86dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/wmrModeFourS"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:visibility="gone"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="46dp" />
+
+            <TextView
+                android:id="@+id/wmrModeFourTV"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="m"
+                android:visibility="gone"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="102dp"
+                tools:layout_editor_absoluteY="46dp" />
+
+            <EditText
+                android:id="@+id/wmrModeFourMET"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="number"
+                android:text="1"
+                android:visibility="gone"
+                android:textAlignment="center"
+                tools:layout_editor_absoluteX="132dp"
+                tools:layout_editor_absoluteY="46dp" />
+
+            <TextView
+                android:id="@+id/wmrModeFourTV1"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="n"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                tools:layout_editor_absoluteX="202dp"
+                tools:layout_editor_absoluteY="46dp" />
+
+            <EditText
+                android:id="@+id/wmrModeFourNET"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:visibility="gone"
+                android:inputType="number"
+                android:selectAllOnFocus="false"
+                android:singleLine="false"
+                android:text="1"
+                android:textAlignment="center"
+                tools:layout_editor_absoluteX="232dp"
+                tools:layout_editor_absoluteY="46dp" />
+
+            <TextView
+                android:id="@+id/wmrModeFourTV2"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:visibility="gone"
+                android:textStyle="bold"
+                android:text="p" />
+
+            <EditText
+                android:id="@+id/wmrModeFourPET"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:visibility="gone"
+                android:inputType="number"
+                android:text="1"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/wmrModeFiveCB"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+            android:text="5. VID "
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="86dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/wmrModeFiveS"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:visibility="gone"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="46dp" />
+
+            <TextView
+                android:id="@+id/wmrModeFiveTV"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="m"
+                android:textAlignment="center"
+                android:visibility="gone"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="102dp"
+                tools:layout_editor_absoluteY="46dp" />
+
+            <EditText
+                android:id="@+id/wmrModeFiveMET"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:visibility="gone"
+                android:inputType="number"
+                android:text="1"
+                android:textAlignment="center"
+                tools:layout_editor_absoluteX="132dp"
+                tools:layout_editor_absoluteY="46dp" />
+
+            <TextView
+                android:id="@+id/wmrModeFiveTV1"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="n"
+                android:visibility="gone"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="202dp"
+                tools:layout_editor_absoluteY="46dp" />
+
+            <EditText
+                android:id="@+id/wmrModeFiveNET"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:visibility="gone"
+                android:inputType="number"
+                android:selectAllOnFocus="false"
+                android:singleLine="false"
+                android:text="1"
+                android:textAlignment="center"
+                tools:layout_editor_absoluteX="232dp"
+                tools:layout_editor_absoluteY="46dp" />
+
+            <TextView
+                android:id="@+id/wmrModeFiveTV2"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:visibility="gone"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:text="p" />
+
+            <EditText
+                android:id="@+id/wmrModeFivePET"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:ems="10"
+                android:inputType="number"
+                android:text="1"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/wmrModeSetBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nastavit vlastní vidy"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+</android.support.constraint.ConstraintLayout>

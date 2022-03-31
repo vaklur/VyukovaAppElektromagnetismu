@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteY="81dp">
+
+    <Button
+        android:id="@+id/wrCavCubSetBTN"
+        android:layout_width="210dp"
+        android:layout_height="50dp"
+        android:text="Potvdit nastavení"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/wrCavCubModeBTN"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wrCavCubSV" />
+
+    <TextView
+        android:id="@+id/wrCavCubSetTV"
+        android:layout_width="360dp"
+        android:layout_height="47dp"
+        android:text="Nastavení parametrů rezonátoru"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/wrCavCubSetIV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/wrCavCubSetIV"
+        android:layout_width="360dp"
+        android:layout_height="172dp"
+        app:layout_constraintBottom_toTopOf="@+id/wrCavCubSV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wrCavCubSetTV"
+        app:srcCompat="@drawable/cavcubresonator" />
+
+    <Button
+        android:id="@+id/wrCavCubModeBTN"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:text="Vlastní vid"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/wrCavCubSetBTN"
+        app:layout_constraintTop_toBottomOf="@+id/wrCavCubSV" />
+
+    <ScrollView
+        android:id="@+id/wrCavCubSV"
+        android:layout_width="364dp"
+        android:layout_height="210dp"
+        app:layout_constraintBottom_toTopOf="@+id/wrCavCubSetBTN"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wrCavCubSetIV">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/wrCavCubSetTV1"
+                android:layout_width="210dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="Šířka rezonátoru a [mm]"
+                android:textAlignment="viewStart"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/wrCavCubSetTV2"
+                app:layout_constraintEnd_toStartOf="@+id/wrCavCubSetAET"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/wrCavCubSetAET"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:text="0"
+                app:layout_constraintBottom_toTopOf="@+id/wrCavCubSetBET"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/wrCavCubSetTV1"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/wrCavCubSetTV7"
+                android:layout_width="210dp"
+                android:layout_height="40dp"
+                android:text="Měrná vodivost σ [S/m] "
+                android:textAlignment="viewStart"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/wrCavCubSetSigmaET"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/wrCavCubSetTV6" />
+
+            <TextView
+                android:id="@+id/wrCavCubSetTV3"
+                android:layout_width="210dp"
+                android:layout_height="40dp"
+                android:text="Délka rezonátoru l [mm]"
+                android:textAlignment="viewStart"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/wrCavCubSetTV4"
+                app:layout_constraintEnd_toStartOf="@+id/wrCavCubSetLET"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/wrCavCubSetTV2" />
+
+            <TextView
+                android:id="@+id/wrCavCubSetTV2"
+                android:layout_width="210dp"
+                android:layout_height="40dp"
+                android:text="Výška rezonátoru b [mm]"
+                android:textAlignment="viewStart"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/wrCavCubSetTV3"
+                app:layout_constraintEnd_toStartOf="@+id/wrCavCubSetBET"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/wrCavCubSetTV1" />
+
+            <TextView
+                android:id="@+id/wrCavCubSetTV4"
+                android:layout_width="210dp"
+                android:layout_height="40dp"
+                android:text="Permitivita dielektrika"
+                android:textAlignment="viewStart"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/wrCavCubSetTV5"
+                app:layout_constraintEnd_toStartOf="@+id/wrCavCubSetEpsrET"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/wrCavCubSetTV3" />
+
+            <TextView
+                android:id="@+id/wrCavCubSetTV5"
+                android:layout_width="210dp"
+                android:layout_height="40dp"
+                android:text="Permeabilita dielektrika"
+                android:textAlignment="viewStart"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/wrCavCubSetTV6"
+                app:layout_constraintEnd_toStartOf="@+id/wrCavCubSetMirET"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/wrCavCubSetTV4" />
+
+            <TextView
+                android:id="@+id/wrCavCubSetTV6"
+                android:layout_width="210dp"
+                android:layout_height="40dp"
+                android:text="Ztrátový činitel tanδ [ ]"
+                android:textAlignment="viewStart"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/wrCavCubSetTV7"
+                app:layout_constraintEnd_toStartOf="@+id/wrCavCubSetTanDeltaET"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/wrCavCubSetTV5" />
+
+            <EditText
+                android:id="@+id/wrCavCubSetLET"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:text="0"
+                app:layout_constraintBottom_toTopOf="@+id/wrCavCubSetEpsrET"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/wrCavCubSetTV3"
+                app:layout_constraintTop_toBottomOf="@+id/wrCavCubSetBET" />
+
+            <EditText
+                android:id="@+id/wrCavCubSetEpsrET"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:text="0"
+                app:layout_constraintBottom_toTopOf="@+id/wrCavCubSetMirET"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/wrCavCubSetTV4"
+                app:layout_constraintTop_toBottomOf="@+id/wrCavCubSetLET" />
+
+            <EditText
+                android:id="@+id/wrCavCubSetMirET"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:text="0"
+                app:layout_constraintBottom_toTopOf="@+id/wrCavCubSetTanDeltaET"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/wrCavCubSetTV5"
+                app:layout_constraintTop_toBottomOf="@+id/wrCavCubSetEpsrET" />
+
+            <EditText
+                android:id="@+id/wrCavCubSetBET"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:text="0"
+                app:layout_constraintBottom_toTopOf="@+id/wrCavCubSetLET"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/wrCavCubSetTV2"
+                app:layout_constraintTop_toBottomOf="@+id/wrCavCubSetAET" />
+
+            <EditText
+                android:id="@+id/wrCavCubSetSigmaET"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:text="0"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/wrCavCubSetTV7"
+                app:layout_constraintTop_toBottomOf="@+id/wrCavCubSetTanDeltaET" />
+
+            <EditText
+                android:id="@+id/wrCavCubSetTanDeltaET"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:text="0"
+                app:layout_constraintBottom_toTopOf="@+id/wrCavCubSetSigmaET"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/wrCavCubSetTV6"
+                app:layout_constraintTop_toBottomOf="@+id/wrCavCubSetMirET" />
+        </android.support.constraint.ConstraintLayout>
+
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/wrSimTV"
+        android:layout_width="339dp"
+        android:layout_height="36dp"
+        android:text="Obdelníkový vlnovod"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/wrSimTV2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/wrWaveguideParamsTV"
+        android:layout_width="340dp"
+        android:layout_height="82dp"
+        android:text=""
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/wrSimTV3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wrSimTV2" />
+
+    <TextView
+        android:id="@+id/wrSimTV2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Parametry našeho vlnovodu:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/wrWaveguideParamsTV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wrSimTV" />
+
+    <Spinner
+        android:id="@+id/wrSimS"
+        android:layout_width="340dp"
+        android:layout_height="39dp"
+        app:layout_constraintBottom_toTopOf="@+id/wrWaveguideModesTV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wrSimTV3" />
+
+    <TextView
+        android:id="@+id/wrSimTV3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zobrazit:"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/wrSimS"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wrWaveguideParamsTV" />
+
+    <TextView
+        android:id="@+id/wrWaveguideModesTV"
+        android:layout_width="340dp"
+        android:layout_height="214dp"
+        android:text="TextView"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/wrSetBTN"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wrSimS" />
+
+    <Button
+        android:id="@+id/wrSetBTN"
+        android:layout_width="292dp"
+        android:layout_height="52dp"
+        android:text="Nastavení parametrů simulace"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wrWaveguideModesTV" />
+
+</android.support.constraint.ConstraintLayout>

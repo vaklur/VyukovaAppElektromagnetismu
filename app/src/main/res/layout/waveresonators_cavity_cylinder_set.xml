@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteY="81dp">
+
+    <Button
+        android:id="@+id/wrCavCylSetBTN"
+        android:layout_width="210dp"
+        android:layout_height="50dp"
+        android:text="Potvdit nastavení"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/wrCavCylModeBTN"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wrCavCylSV" />
+
+    <TextView
+        android:id="@+id/wrCavCylSetTV"
+        android:layout_width="360dp"
+        android:layout_height="47dp"
+        android:text="Nastavení parametrů rezonátoru"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/wrCavCylSetIV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/wrCavCylSetIV"
+        android:layout_width="360dp"
+        android:layout_height="172dp"
+        app:layout_constraintBottom_toTopOf="@+id/wrCavCylSV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wrCavCylSetTV"
+        app:srcCompat="@drawable/cavcylresonator" />
+
+    <Button
+        android:id="@+id/wrCavCylModeBTN"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:text="Vlastní vid"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/wrCavCylSetBTN"
+        app:layout_constraintTop_toBottomOf="@+id/wrCavCylSV" />
+
+    <ScrollView
+        android:id="@+id/wrCavCylSV"
+        android:layout_width="364dp"
+        android:layout_height="210dp"
+        app:layout_constraintBottom_toTopOf="@+id/wrCavCylSetBTN"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wrCavCylSetIV">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/wrCavCylSetTV1"
+                android:layout_width="220dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="Poloměr rezonátoru a [mm]"
+                android:textAlignment="viewStart"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/wrCavCylSetTV3"
+                app:layout_constraintEnd_toStartOf="@+id/wrCavCylSetAET"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/wrCavCylSetAET"
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:text="0"
+                app:layout_constraintBottom_toTopOf="@+id/wrCavCylSetLET"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/wrCavCylSetTV1"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/wrCavCylSetTV7"
+                android:layout_width="210dp"
+                android:layout_height="40dp"
+                android:text="Měrná vodivost σ [S/m] "
+                android:textAlignment="viewStart"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/wrCavCylSetSigmaET"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/wrCavCylSetTV6" />
+
+            <TextView
+                android:id="@+id/wrCavCylSetTV3"
+                android:layout_width="210dp"
+                android:layout_height="40dp"
+                android:text="Délka rezonátoru l [mm]"
+                android:textAlignment="viewStart"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/wrCavCylSetTV4"
+                app:layout_constraintEnd_toStartOf="@+id/wrCavCylSetLET"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/wrCavCylSetTV1" />
+
+            <TextView
+                android:id="@+id/wrCavCylSetTV4"
+                android:layout_width="210dp"
+                android:layout_height="40dp"
+                android:text="Permitivita dielektrika"
+                android:textAlignment="viewStart"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/wrCavCylSetTV5"
+                app:layout_constraintEnd_toStartOf="@+id/wrCavCylSetEpsrET"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/wrCavCylSetTV3" />
+
+            <TextView
+                android:id="@+id/wrCavCylSetTV5"
+                android:layout_width="210dp"
+                android:layout_height="40dp"
+                android:text="Permeabilita dielektrika"
+                android:textAlignment="viewStart"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/wrCavCylSetTV6"
+                app:layout_constraintEnd_toStartOf="@+id/wrCavCylSetMirET"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/wrCavCylSetTV4" />
+
+            <TextView
+                android:id="@+id/wrCavCylSetTV6"
+                android:layout_width="210dp"
+                android:layout_height="40dp"
+                android:text="Ztrátový činitel tanδ [ ]"
+                android:textAlignment="viewStart"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/wrCavCylSetTV7"
+                app:layout_constraintEnd_toStartOf="@+id/wrCavCylSetTanDeltaET"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/wrCavCylSetTV5" />
+
+            <EditText
+                android:id="@+id/wrCavCylSetLET"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:text="0"
+                app:layout_constraintBottom_toTopOf="@+id/wrCavCylSetEpsrET"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/wrCavCylSetTV3"
+                app:layout_constraintTop_toBottomOf="@+id/wrCavCylSetAET" />
+
+            <EditText
+                android:id="@+id/wrCavCylSetEpsrET"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:text="0"
+                app:layout_constraintBottom_toTopOf="@+id/wrCavCylSetMirET"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/wrCavCylSetTV4"
+                app:layout_constraintTop_toBottomOf="@+id/wrCavCylSetLET" />
+
+            <EditText
+                android:id="@+id/wrCavCylSetMirET"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:text="0"
+                app:layout_constraintBottom_toTopOf="@+id/wrCavCylSetTanDeltaET"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/wrCavCylSetTV5"
+                app:layout_constraintTop_toBottomOf="@+id/wrCavCylSetEpsrET" />
+
+            <EditText
+                android:id="@+id/wrCavCylSetSigmaET"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:text="0"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/wrCavCylSetTV7"
+                app:layout_constraintTop_toBottomOf="@+id/wrCavCylSetTanDeltaET" />
+
+            <EditText
+                android:id="@+id/wrCavCylSetTanDeltaET"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:text="0"
+                app:layout_constraintBottom_toTopOf="@+id/wrCavCylSetSigmaET"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/wrCavCylSetTV6"
+                app:layout_constraintTop_toBottomOf="@+id/wrCavCylSetMirET" />
+        </android.support.constraint.ConstraintLayout>
+
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

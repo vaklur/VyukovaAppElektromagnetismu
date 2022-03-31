@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/aboutAppTV"
+        android:layout_width="370dp"
+        android:layout_height="41dp"
+        android:text="Výuková aplikace elektromagnetismu"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/aboutAppIV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/aboutAppIV"
+        android:layout_width="195dp"
+        android:layout_height="160dp"
+        app:layout_constraintBottom_toTopOf="@+id/aboutAppTV2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aboutAppTV"
+        app:srcCompat="@drawable/icon" />
+
+    <TextView
+        android:id="@+id/aboutAppTV2"
+        android:layout_width="104dp"
+        android:layout_height="35dp"
+        android:text="Verze 1.0"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/aboutAppTV3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aboutAppIV" />
+
+    <TextView
+        android:id="@+id/aboutAppTV3"
+        android:layout_width="352dp"
+        android:layout_height="157dp"
+        android:text="@string/AppInfo"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/aboutAppTV4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aboutAppTV2" />
+
+    <TextView
+        android:id="@+id/aboutAppTV4"
+        android:layout_width="268dp"
+        android:layout_height="38dp"
+        android:autoLink="email"
+        android:text="xmicha63@stud.feec.vutbr.cz"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aboutAppTV3" />
+</android.support.constraint.ConstraintLayout>

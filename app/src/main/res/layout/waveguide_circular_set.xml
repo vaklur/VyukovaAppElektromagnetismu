@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/wcSetTV"
+        android:layout_width="339dp"
+        android:layout_height="45dp"
+        android:text="Nastavení parametrů vlnovodu"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/wcSetIV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/wcSetIV"
+        android:layout_width="354dp"
+        android:layout_height="179dp"
+        app:layout_constraintBottom_toTopOf="@+id/wcSetTV2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wcSetTV"
+        app:srcCompat="@drawable/circwg" />
+
+    <TextView
+        android:id="@+id/wcSetTV2"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:text="Poloměr vlnovodu a [mm]"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/wcSetTV4"
+        app:layout_constraintEnd_toStartOf="@+id/wcSetAET"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wcSetIV" />
+
+    <TextView
+        android:id="@+id/wcSetTV4"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:text="Permitivita dielektrika"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/wcSetTV5"
+        app:layout_constraintEnd_toStartOf="@+id/wcSetEpsrET"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wcSetTV2" />
+
+    <TextView
+        android:id="@+id/wcSetTV5"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:text="Permeabilita dielektrika"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/wcSetTV6"
+        app:layout_constraintEnd_toStartOf="@+id/wcSetMiET"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wcSetTV4" />
+
+    <TextView
+        android:id="@+id/wcSetTV6"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:text="Frekvence vlny f [GHz]"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/wcSimBTN"
+        app:layout_constraintEnd_toStartOf="@+id/wcSetFreqET"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wcSetTV5" />
+
+    <EditText
+        android:id="@+id/wcSetAET"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="0"
+        app:layout_constraintBottom_toTopOf="@+id/wcSetEpsrET"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/wcSetTV2"
+        app:layout_constraintTop_toBottomOf="@+id/wcSetIV" />
+
+    <EditText
+        android:id="@+id/wcSetEpsrET"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="0"
+        app:layout_constraintBottom_toTopOf="@+id/wcSetMiET"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/wcSetTV4"
+        app:layout_constraintTop_toBottomOf="@+id/wcSetAET" />
+
+    <EditText
+        android:id="@+id/wcSetMiET"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="0"
+        app:layout_constraintBottom_toTopOf="@+id/wcSetFreqET"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/wcSetTV5"
+        app:layout_constraintTop_toBottomOf="@+id/wcSetEpsrET" />
+
+    <EditText
+        android:id="@+id/wcSetFreqET"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="0"
+        app:layout_constraintBottom_toTopOf="@+id/wcModeBTN"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/wcSetTV6"
+        app:layout_constraintTop_toBottomOf="@+id/wcSetMiET" />
+
+    <Button
+        android:id="@+id/wcSimBTN"
+        android:layout_width="207dp"
+        android:layout_height="49dp"
+        android:text="Potvdit nastavení"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/wcModeBTN"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wcSetTV6" />
+
+    <Button
+        android:id="@+id/wcModeBTN"
+        android:layout_width="143dp"
+        android:layout_height="49dp"
+        android:text="Vlastní vid"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/wcSimBTN"
+        app:layout_constraintTop_toBottomOf="@+id/wcSetTV6" />
+</android.support.constraint.ConstraintLayout>

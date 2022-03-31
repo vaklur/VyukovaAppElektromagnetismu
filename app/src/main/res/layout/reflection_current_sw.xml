@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="81dp">
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/currentswLCH"
+        android:layout_width="327dp"
+        android:layout_height="331dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/currentsviTV2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/currentswTV1"
+        app:layout_constraintTop_toBottomOf="@+id/modulsviBTN"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <TextView
+        android:id="@+id/currentsviTV2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vzdálenost od konce vedení [m]"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/currentswLCH"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <Button
+        android:id="@+id/modulsviBTN"
+        android:layout_width="167dp"
+        android:layout_height="50dp"
+        android:text="Modul SV proudu"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/currentswLCH"
+        app:layout_constraintEnd_toStartOf="@+id/argumentsviBTN"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <Button
+        android:id="@+id/argumentsviBTN"
+        android:layout_width="189dp"
+        android:layout_height="50dp"
+        android:text="Argument SV proudu"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/currentswLCH"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/modulsviBTN"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <com.example.bubuk.semestralniprace.OtherClass.VerticalTV
+        android:id="@+id/currentswTV1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="bottom|right"
+        android:text="Velikost proudu [A]"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/currentswLCH"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/modulsviBTN" />
+
+</android.support.constraint.ConstraintLayout>

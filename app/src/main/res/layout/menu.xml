@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.bubuk.semestralniprace.Activity.Menu"
+    tools:layout_editor_absoluteY="81dp">
+
+    <Button
+        android:id="@+id/examplesBTN"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:text="Příklady z teorie"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/testBTN"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menuTV" />
+
+    <TextView
+        android:id="@+id/menuTV"
+        android:layout_width="320dp"
+        android:layout_height="114dp"
+        android:text="Výuková aplikace elektromagnetismu"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/examplesBTN"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoIV" />
+
+    <Button
+        android:id="@+id/testBTN"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:text=" Test znalostí"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/aboutAppBTN"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/examplesBTN" />
+
+    <ImageView
+        android:id="@+id/logoIV"
+        android:layout_width="324dp"
+        android:layout_height="147dp"
+        app:layout_constraintBottom_toTopOf="@+id/menuTV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <Button
+        android:id="@+id/aboutAppBTN"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:text="O aplikaci"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/testBTN" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteY="81dp">
+
+    <Button
+        android:id="@+id/wrCoaxSetBTN"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:text="Potvdit nastavení"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wrCoaxSV" />
+
+    <TextView
+        android:id="@+id/wrCoaxSetTV"
+        android:layout_width="360dp"
+        android:layout_height="47dp"
+        android:text="Nastavení parametrů rezonátoru"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/wrCoaxSetIV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/wrCoaxSetIV"
+        android:layout_width="360dp"
+        android:layout_height="172dp"
+        app:layout_constraintBottom_toTopOf="@+id/wrCoaxSV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wrCoaxSetTV"
+        app:srcCompat="@drawable/coaxresonator" />
+
+    <ScrollView
+        android:id="@+id/wrCoaxSV"
+        android:layout_width="364dp"
+        android:layout_height="210dp"
+        app:layout_constraintBottom_toTopOf="@+id/wrCoaxSetBTN"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wrCoaxSetIV">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/wrCoaxSetTV1"
+                android:layout_width="210dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="Poloměr vnitřní r0 [mm]"
+                android:textAlignment="viewStart"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/wrCoaxSetTV2"
+                app:layout_constraintEnd_toStartOf="@+id/wrCoaxSetRET"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/wrCoaxSetRET"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:text="0"
+                app:layout_constraintBottom_toTopOf="@+id/wrCoaxSetBRET"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/wrCoaxSetTV1"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/wrCoaxSetTV7"
+                android:layout_width="210dp"
+                android:layout_height="40dp"
+                android:text="Měrná vodivost σ [S/m] "
+                android:textAlignment="viewStart"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/wrCoaxSetSigmaET"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/wrCoaxSetTV6" />
+
+            <TextView
+                android:id="@+id/wrCoaxSetTV3"
+                android:layout_width="210dp"
+                android:layout_height="40dp"
+                android:text="Délka rezonátoru l [mm]"
+                android:textAlignment="viewStart"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/wrCoaxSetTV4"
+                app:layout_constraintEnd_toStartOf="@+id/wrCoaxSetLET"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/wrCoaxSetTV2" />
+
+            <TextView
+                android:id="@+id/wrCoaxSetTV2"
+                android:layout_width="210dp"
+                android:layout_height="40dp"
+                android:text="Poloměr vnější R0 [mm]"
+                android:textAlignment="viewStart"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/wrCoaxSetTV3"
+                app:layout_constraintEnd_toStartOf="@+id/wrCoaxSetBRET"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/wrCoaxSetTV1" />
+
+            <TextView
+                android:id="@+id/wrCoaxSetTV4"
+                android:layout_width="210dp"
+                android:layout_height="40dp"
+                android:text="Permitivita dielektrika"
+                android:textAlignment="viewStart"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/wrCoaxSetTV5"
+                app:layout_constraintEnd_toStartOf="@+id/wrCoaxSetEpsrET"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/wrCoaxSetTV3" />
+
+            <TextView
+                android:id="@+id/wrCoaxSetTV5"
+                android:layout_width="210dp"
+                android:layout_height="40dp"
+                android:text="Permeabilita dielektrika"
+                android:textAlignment="viewStart"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/wrCoaxSetTV6"
+                app:layout_constraintEnd_toStartOf="@+id/wrCoaxSetMirET"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/wrCoaxSetTV4" />
+
+            <TextView
+                android:id="@+id/wrCoaxSetTV6"
+                android:layout_width="210dp"
+                android:layout_height="40dp"
+                android:text="Ztrátový činitel tanδ [ ]"
+                android:textAlignment="viewStart"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/wrCoaxSetTV7"
+                app:layout_constraintEnd_toStartOf="@+id/wrCoaxSetTanDeltaET"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/wrCoaxSetTV5" />
+
+            <EditText
+                android:id="@+id/wrCoaxSetLET"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:text="0"
+                app:layout_constraintBottom_toTopOf="@+id/wrCoaxSetEpsrET"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/wrCoaxSetTV3"
+                app:layout_constraintTop_toBottomOf="@+id/wrCoaxSetBRET" />
+
+            <EditText
+                android:id="@+id/wrCoaxSetEpsrET"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:text="0"
+                app:layout_constraintBottom_toTopOf="@+id/wrCoaxSetMirET"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/wrCoaxSetTV4"
+                app:layout_constraintTop_toBottomOf="@+id/wrCoaxSetLET" />
+
+            <EditText
+                android:id="@+id/wrCoaxSetMirET"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:text="0"
+                app:layout_constraintBottom_toTopOf="@+id/wrCoaxSetTanDeltaET"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/wrCoaxSetTV5"
+                app:layout_constraintTop_toBottomOf="@+id/wrCoaxSetEpsrET" />
+
+            <EditText
+                android:id="@+id/wrCoaxSetBRET"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:text="0"
+                app:layout_constraintBottom_toTopOf="@+id/wrCoaxSetLET"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/wrCoaxSetTV2"
+                app:layout_constraintTop_toBottomOf="@+id/wrCoaxSetRET" />
+
+            <EditText
+                android:id="@+id/wrCoaxSetSigmaET"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:text="0"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/wrCoaxSetTV7"
+                app:layout_constraintTop_toBottomOf="@+id/wrCoaxSetTanDeltaET" />
+
+            <EditText
+                android:id="@+id/wrCoaxSetTanDeltaET"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:text="0"
+                app:layout_constraintBottom_toTopOf="@+id/wrCoaxSetSigmaET"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/wrCoaxSetTV6"
+                app:layout_constraintTop_toBottomOf="@+id/wrCoaxSetMirET" />
+        </android.support.constraint.ConstraintLayout>
+
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

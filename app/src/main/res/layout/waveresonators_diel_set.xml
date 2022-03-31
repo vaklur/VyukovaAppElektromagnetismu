@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/wrDielSetTV12"
+        android:layout_width="210dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:text="Šířka rezonátoru a [mm]"
+        android:textAlignment="viewStart"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/wrDielSetTV14"
+        app:layout_constraintEnd_toStartOf="@+id/wrDielSetAET3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wrDielSetIV" />
+
+    <EditText
+        android:id="@+id/wrDielSetAET3"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="0"
+        app:layout_constraintBottom_toTopOf="@+id/wrDielSetBET3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/wrDielSetTV12"
+        app:layout_constraintTop_toBottomOf="@+id/wrDielSetIV" />
+
+    <TextView
+        android:id="@+id/wrDielSetTV13"
+        android:layout_width="210dp"
+        android:layout_height="40dp"
+        android:text="Délka rezonátoru l [mm]"
+        android:textAlignment="viewStart"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/wrDielSetTV15"
+        app:layout_constraintEnd_toStartOf="@+id/wrDielSetLET3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wrDielSetTV14" />
+
+    <TextView
+        android:id="@+id/wrDielSetTV14"
+        android:layout_width="210dp"
+        android:layout_height="40dp"
+        android:text="Výška rezonátoru b [mm]"
+        android:textAlignment="viewStart"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/wrDielSetTV13"
+        app:layout_constraintEnd_toStartOf="@+id/wrDielSetBET3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wrDielSetTV12" />
+
+    <TextView
+        android:id="@+id/wrDielSetTV15"
+        android:layout_width="210dp"
+        android:layout_height="40dp"
+        android:text="Permitivita dielektrika"
+        android:textAlignment="viewStart"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/wrDielSetTV16"
+        app:layout_constraintEnd_toStartOf="@+id/wrDielSetEpsrET3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wrDielSetTV13" />
+
+    <TextView
+        android:id="@+id/wrDielSetTV16"
+        android:layout_width="210dp"
+        android:layout_height="40dp"
+        android:text="Ztrátový činitel tanδ [ ]"
+        android:textAlignment="viewStart"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/wrDielSetBTN"
+        app:layout_constraintEnd_toStartOf="@+id/wrDielSetTanDeltaET3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wrDielSetTV15" />
+
+    <EditText
+        android:id="@+id/wrDielSetLET3"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="0"
+        app:layout_constraintBottom_toTopOf="@+id/wrDielSetEpsrET3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/wrDielSetTV13"
+        app:layout_constraintTop_toBottomOf="@+id/wrDielSetBET3" />
+
+    <EditText
+        android:id="@+id/wrDielSetEpsrET3"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="0"
+        app:layout_constraintBottom_toTopOf="@+id/wrDielSetTanDeltaET3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/wrDielSetTV15"
+        app:layout_constraintTop_toBottomOf="@+id/wrDielSetLET3" />
+
+    <EditText
+        android:id="@+id/wrDielSetBET3"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="0"
+        app:layout_constraintBottom_toTopOf="@+id/wrDielSetTV13"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/wrDielSetTV14"
+        app:layout_constraintTop_toBottomOf="@+id/wrDielSetTV12" />
+
+    <EditText
+        android:id="@+id/wrDielSetTanDeltaET3"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="0"
+        app:layout_constraintBottom_toTopOf="@+id/wrDielModeBTN"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/wrDielSetTV16"
+        app:layout_constraintTop_toBottomOf="@+id/wrDielSetEpsrET3" />
+
+    <Button
+        android:id="@+id/wrDielSetBTN"
+        android:layout_width="210dp"
+        android:layout_height="50dp"
+        android:text="Potvdit nastavení"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/wrDielModeBTN"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wrDielSetTV16" />
+
+    <TextView
+        android:id="@+id/wrDielSetTV"
+        android:layout_width="360dp"
+        android:layout_height="47dp"
+        android:text="Nastavení parametrů rezonátoru"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/wrDielSetIV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/wrDielSetIV"
+        android:layout_width="360dp"
+        android:layout_height="172dp"
+        app:layout_constraintBottom_toTopOf="@+id/wrDielSetTV12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wrDielSetTV"
+        app:srcCompat="@drawable/dielresonator" />
+
+    <Button
+        android:id="@+id/wrDielModeBTN"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:text="Vlastní vid"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/wrDielSetBTN"
+        app:layout_constraintTop_toBottomOf="@+id/wrDielSetTanDeltaET3" />
+
+</android.support.constraint.ConstraintLayout>
